@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-mark">HV</div>
+        <div>
+          <span class="brand-name">Hoang Vinh</span>
+          <span class="brand-tag">Creative Portfolio</span>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span>Dark</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio Showcase</p>
+          <h1>Designing digital experiences that feel modern, elegant, and bold.</h1>
+          <p>Curated visual stories through editing, illustration, and interface design.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary">View Projects</a>
+            <a href="#contact" class="button button-secondary">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="slider-card">
+          <div class="slider" id="heroSlider">
+            <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80');">
+              <div class="slide-label">Packaging Design</div>
+            </div>
+            <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80');">
+              <div class="slide-label">Visual Identity</div>
+            </div>
+            <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80');">
+              <div class="slide-label">Creative Studio</div>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-button" data-action="prev" aria-label="Previous slide">‹</button>
+            <button class="slider-button" data-action="next" aria-label="Next slide">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <span class="eyebrow">About Me</span>
+          <h2>Creative designer with a passion for digital storytelling.</h2>
+        </div>
+        <p>I’m a multidisciplinary creative focused on branding, UX, and digital art. I build thoughtful experiences that help brands connect with their audience through polished visuals and clear presentation.</p>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading">
+          <span class="eyebrow">Skills</span>
+          <h2>Tools I use to bring ideas to life.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">Ps</div>
+            <h3>Photoshop</h3>
+            <p>Advanced image editing, compositing, and retouching for premium visual content.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">Ai</div>
+            <h3>Illustrator</h3>
+            <p>Vector-based illustrations, branding systems, and icon design with precise control.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">Xd</div>
+            <h3>UI/UX</h3>
+            <p>Interface design and prototyping focused on usable, engaging digital products.</p>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">Pr</div>
+            <h3>Motion</h3>
+            <p>Smooth transitions and animated storytelling for presentations and digital campaigns.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading">
+          <span class="eyebrow">Projects</span>
+          <h2>Selected work that reflects my process and style.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image" style="background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="project-content">
+              <h3>Brand Refresh</h3>
+              <p>A full brand refresh for a lifestyle label, including logo, packaging, and web visuals.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="project-content">
+              <h3>Editorial Layout</h3>
+              <p>Editorial design for a digital magazine concept with a focus on typography and rhythm.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image" style="background-image:url('https://images.unsplash.com/photo-1517430816045-df4b7de1ee18?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="project-content">
+              <h3>Marketing Campaign</h3>
+              <p>Visual campaign assets created for a product launch targeting modern creatives.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <span class="eyebrow">Contact</span>
+          <h2>Let’s start a new project together.</h2>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <p>+84 123 456 789</p>
+          </div>
+          <div>
+            <h3>Location</h3>
+            <p>Ho Chi Minh City, Vietnam</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Hoang Vinh. Crafted with a clean, modern aesthetic.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
