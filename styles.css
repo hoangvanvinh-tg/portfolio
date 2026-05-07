@@ -268,8 +268,34 @@ a {
 }
 
 .section-heading {
+  position: relative;
   max-width: 720px;
   margin-bottom: 28px;
+  padding-left: 34px;
+}
+
+.section-heading::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 16px 0 0 var(--primary-strong), 8px 0 0 var(--primary);
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 36px;
+  width: 6px;
+  height: 32px;
+  background: var(--primary-strong);
+  border-radius: 999px;
+  transform: rotate(-16deg);
 }
 
 .skills-grid,
